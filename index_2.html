@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="img-icons/title-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinapsis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body class="">
+
+
+    <!-- LEFT + RIGHT -->
+    
+    <div class="sinopsis-custome-bg container-fluid d-flex row position-relative custome-height-class-main-container min-vh-100 g-0">
+
+        <!-- LEFT -->
+
+        <div class="container-fluid sinopsis-custome-logo-container overflow-hidden col-lg-5 col-12 g-0">
+              <img class="" src="img-vlevo/vlevo-1.svg" alt="">
+        </div>
+
+        <!-- RIGHT -->
+
+            <!-- NAVBAR -->
+
+            <nav class="navbar position-absolute stacic-top"> 
+              <div class="container-fluid justify-content-end">
+
+                <!-- BURGER BUTTON -->
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSinapsisBurger" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <span class="burger-bar-icon">
+                    <img src="img-icons/burger-icon.svg" alt="burger">
+                  </span>
+                </button>
+
+                <!-- SEARCH BUTTON -->
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSinapsisSearch" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <span class="search-bar-icon">
+                    <img src="img-icons/search-icon.svg" alt="search">
+                  </span>
+                </button>
+
+                <!-- SEARCH -->
+                <div class="offcanvas offcanvas-end overflow-hidden" data-bs-scroll="true" tabindex="-1" id="offcanvasSinapsisSearch" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <span class="close-icon">
+                        <img src="img-icons/close-icon.svg" alt="close">
+                      </span>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body px-5 overflow-hidden">
+                    <div class="container d-flex mt-4 px-0">
+                      <div class="sinopsis-input-group w-100 rounded">
+                        <!-- SEARCH BAR -->
+                        <input type="search" class="form-control w-100 rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                      </div>
+                      <div class="sinopsis-search-icon mx-2 pt-1">
+                        <span class="search-icon">
+                          <img src="img-icons/search-icon.svg" alt="search">
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BURGER -->
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSinapsisBurger" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <span class="close-icon">
+                        <img src="img-icons/close-icon.svg" alt="close">
+                      </span>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body px-5">
+
+                    <ul class="navbar-nav flex-grow-1">
+                      <li class="nav-item my-2">
+                        <a class="nav-link" href="#">
+                          analytické komentáře
+                        </a>
+                      </li>
+                      <li class="nav-item my-2">
+                        <a class="nav-link" href="#">
+                          pojmy a termíny
+                        </a>
+                      </li>
+                      <li class="nav-item active my-2">
+                        <a class="nav-link" href="#">
+                          research and analysis (en)
+                        </a>
+                      </li>
+                      <li class="nav-item my-2">
+                        <a class="nav-link" href="#">
+                          aktuality
+                        </a>
+                      </li>
+                      <li class="nav-item my-2">
+                        <a class="nav-link" href="#">
+                          acamedia.cz
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div class="container d-flex mt-4 px-0">
+                      <div class="btn-light px-3 me-4 py-2">světlý</div>
+                      <div class="btn-dark px-3 py-2">tmavý</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+            <!-- CONTENT -->
+
+        <div class="sinopsis-content ms-auto overflow-y-auto col-lg-7 col-12 g-0">
+
+            <!-- INNER CONTENT DIV -->
+            <div class="content custome-inner-content-padding min-vh-15">
+
+            <!-- DROPDOWN BUTTONS -->
+            <div class="container-fluid g-0">
+                  
+                  <div class="row row-cols-2 justify-content-between g-0">
+                    <div class="dropdown col-2 my-1">
+                      <div class="dropdown">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          <a class="dropdown-section">DATE</a>
+                        </button>
+                        <div class="sinopsis-dropdown-menu  dropdown-menu border-radius-0" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown col-2 my-1">
+                      <div class="dropdown">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="dropdown-section">AUTOR</a>
+                        </button>
+                        <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown col-2 my-1">
+                      <div class="dropdown">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="dropdown-section">SEKCE</a>
+                        </button>
+                        <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown col-2 my-1">
+                      <div class="dropdown">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="dropdown-section">TÉMA</a>
+                        </button>
+                        <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown col-2 my-1">
+                      <div class="dropdown">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="dropdown-section">ŠTÍTEK</a>
+                        </button> 
+                        <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+                <!-- DIVIDER -->
+                <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Události kolem masakru na Tchien-an-men 1989 – Den po dni</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Zahraniční výbor Poslanecké sněmovny vyzval vládu k opuštění platformy 16+1 pro spolupráci Číny se státy střední a východní Evropy. Projekt Sinopsis již v minulosti připravil doporučení pro změnu politiky ČR ve vztahu k této čínské iniciativě.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Návštěva Michelle Bacheletové jako součást čínských globálních plánů</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Přehled vztahů mezi Čínskou lidovou republikou a Íránskou islámskou republikou od roku 1979 do současnosti.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Vzpomínkové akce k výročí masakru na náměstí Tchien-an-men</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Etická komise Akademie věd České republiky odmítla část kritiky působení českého vědce Marka Hrubce v think-tanku Komunistické strany Číny. Promítá se v tom nepochopení způsobu instrumentalizace vědy v politickém systému Čínské lidové republiky.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Tajné dokumenty dokládají podíl Si Ťin-pchinga na ujgurské genocidě</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Zahraniční výbor Poslanecké sněmovny vyzval vládu k opuštění platformy 16+1 pro spolupráci Číny se státy střední a východní Evropy. Projekt Sinopsis již v minulosti připravil doporučení pro změnu politiky ČR ve vztahu k této čínské iniciativě.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Střední Asie – třecí plocha geopolitických zájmů Moskvy a Pekingu</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Přehled vztahů mezi Čínskou lidovou republikou a Íránskou islámskou republikou od roku 1979 do současnosti.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Papež komunistům nerozumí: Rozhovor s kardinálem vyšetřovaným hongkongskou státní bezpečností</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Etická komise Akademie věd České republiky odmítla část kritiky působení českého vědce Marka Hrubce v think-tanku Komunistické strany Číny. Promítá se v tom nepochopení způsobu instrumentalizace vědy v politickém systému Čínské lidové republiky.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Po deseti letech je na čase přehodnotit české členství v platformě 16+1</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Zahraniční výbor Poslanecké sněmovny vyzval vládu k opuštění platformy 16+1 pro spolupráci Číny se státy střední a východní Evropy. Projekt Sinopsis již v minulosti připravil doporučení pro změnu politiky ČR ve vztahu k této čínské iniciativě.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Čínsko-íránské vztahy</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Přehled vztahů mezi Čínskou lidovou republikou a Íránskou islámskou republikou od roku 1979 do současnosti.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <h3>Rozhodnutí Etické komise akademie věd nemůže obstát</h3>
+
+              <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
+              <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
+                  
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/clock-icon.svg" alt="clock">
+                    <span class="symbol-text g-0">11.10.2017</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/user-icon.svg" alt="user">
+                    <span class="symbol-text g-0">Sinopsis</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/folder-icon.svg" alt="folder">
+                    <span class="symbol-text g-0">Analytické komentáře</span>
+                  </div>
+
+                  <div class="me-2">
+                    <img class="symbol-icon mb-1 me-1" src="img-icons/eye-icon.svg" alt="eye">
+                    <span class="symbol-text g-0">Si Ťin-pching</span>
+                    </div>
+
+                
+              </div>
+              
+              <p>Etická komise Akademie věd České republiky odmítla část kritiky působení českého vědce Marka Hrubce v think-tanku Komunistické strany Číny. Promítá se v tom nepochopení způsobu instrumentalizace vědy v politickém systému Čínské lidové republiky.</p>
+
+              <!-- DIVIDER -->
+              <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
+
+              <!-- PAGINATION -->
+              <div class="sinopsis-pagination d-flex flex-row gap-1 my-4">
+ 
+                <!-- <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+                <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+              
+                <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+                <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div> -->
+
+                <div class="sinopsis-pagination-border">
+                  <a class="text-decoration-none text-black" href="index.html"><div class="sinopsis-pagination-color">1</div></a>
+                </div>
+                <div class="sinopsis-pagination-border">
+                  <a class="text-decoration-none text-black" href="index_2.html"><div class="sinopsis-pagination-color">2</div></a>
+                </div>
+                <div class="sinopsis-pagination-border">
+                  <a class="text-decoration-none text-black" href="index_3.html"><div class="sinopsis-pagination-color">3</div>
+                  </a>
+                </div>
+                <div class="sinopsis-pagination-border">
+                  <a class="text-decoration-none text-black" href="#"><div class="sinopsis-pagination-color">></div></a>
+                </div>
+              </div>
+
+              <!-- PŘEPIS -->
+
+              <p class="sinopsis-custome-prepis-terminu">Pro přepis čínských termínů a jmen používáme standardní českou transkripci; pouze v sekci Sinopis uvádíme také čínskou oficiální transkripci pchin-jin (pinyin). Nástroj pro převod mezi transkripčními systémy <a href="" class="sinopsis-custome-active-text-link-red-bold"> zde</a>.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer container-fluid sticky-bottom position-relative overflow-hidden">
+
+      <div class="mx-0 mx-sm-5 sinopsis-custome-footer-inner-class">
+      <div class="sinopsis-custome-footer-margin container-fluid d-lg-flex justify-content-evenly d-block g-0">
+
+      <div class="container-fluid g-0">
+        <div class="navbar-nav d-flex flex-col flex-lg-row justify-content-between my-md-4 my-lg-2">
+          <div class="sinopsis-custome-menu-class my-3">analytické komentáře</div>
+          <div class="sinopsis-custome-menu-class my-3">pojmy a termíny </div>
+          <div class="sinopsis-custome-menu-class my-3">research and analysis (en)</div>
+          <div class="sinopsis-custome-menu-class my-3">aktuality</div>
+          <div class="sinopsis-custome-menu-class my-3">acamedia.cz</div>
+        </div>
+      </div>
+
+      </div>
+
+        <div class="container-fluid d-sm-flex justify-content-sm-start justify-content-sm-between d-block g-0">
+
+          <div class="footer-bottom-row-left justify-content-md-center my-4 my-sm-1">
+            © 2022 AcaMedia z.ú.  |  Kontakt: sinopsis@acamedia.cz
+          </div>
+                   
+            <div class="navbar-nav d-flex  flex-row justify-content-md-center align-self-start my-4 my-sm-1">
+              <div class="footer-bottom-row-right icon">
+                <img class="img-icon" src="img-icons/twitter-icon.svg" alt="twitter">
+              </div>
+              <div class="footer-bottom-row-right icon">
+                <img class="img-icon" src="img-icons/facebook-icon.svg" alt="facebook">
+              </div>
+              <div class="footer-bottom-row-right icon">
+                <img class="img-icon" src="img-icons/wifi-icon.svg" alt="wifi">
+              </div>
+              <div class="footer-bottom-row-right icon">
+                <img class="img-icon" src="img-icons/envelope-icon.svg" alt="email">
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./src/main.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>   
+
+  </body>
+
+</html>
