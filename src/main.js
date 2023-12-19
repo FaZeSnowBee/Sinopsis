@@ -1,6 +1,3 @@
-import '../styles/modern-normalize.css'
-import '../styles/style.css'
-
 const themeDarkBtn = document.querySelector('.btn-dark');
 
 const themeLightBtn = document.querySelector('.btn-light');
@@ -30,6 +27,12 @@ const handleThemeLight = () => {
 themeDarkBtn.addEventListener('click', handleThemeDark);
 
 themeLightBtn.addEventListener('click', handleThemeLight);
+
+
+document.getElementById("datePicker").addEventListener("change", function() {
+    var selectedDate = this.value;
+    console.log("Selected date: " + selectedDate);
+  });
 
 // const symbolIcon = document.querySelector('.symbol-icon');
 

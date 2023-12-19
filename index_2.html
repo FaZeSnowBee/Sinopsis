@@ -9,7 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modern-normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    
   </head>
 
   <body class="">
@@ -22,7 +25,22 @@
         <!-- LEFT -->
 
         <div class="container-fluid sinopsis-custome-logo-container overflow-hidden col-lg-5 col-12 g-0">
-              <img class="" src="img-vlevo/vlevo-1.svg" alt="">
+          <div class="text-center mt-5-875rem d-block">
+            <img class="" src="img-vlevo/vlevo-logo.svg" alt="">
+            <div class="px-3 mt-5 justify-content-center mb-5-875rem">
+              <!-- LOGO NADPIS-->
+              <p style="color: #FFEACC;" class="mx-auto mw-5-875rem mb-5 h1-logo lato">
+                Dokument č.9 <br> (Oběžník o současném stavu v oblasti ideologie)
+              </p>
+              <!-- LOGO TEXT POD NADPISEM -->
+              <p class="mx-auto mw-5-875rem white-text text-logo">
+                关于当前意识形态领域情况的通报, <span class="italic">Kuan-jü tang-čchien i-š' sing-tchaj ling-jü čching-kchuang te tchung-pao</span>
+              </p>
+              <p class="mx-auto mw-5-875rem white-text text-logo">
+                PCHIN-JIN: <span class="italic">Guānyú dāngqián yìshí xíngtài lǐngyù qíngkuàng de tōngbào</span>
+              </p>
+            </div>
+          </div>
         </div>
 
         <!-- RIGHT -->
@@ -129,22 +147,22 @@
             <!-- DROPDOWN BUTTONS -->
             <div class="container-fluid g-0">
                   
+                   <!-- DATAPICKER -->
                   <div class="row row-cols-2 justify-content-between g-0">
                     <div class="dropdown col-2 my-1">
                       <div class="dropdown">
-                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-1  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                           <a class="dropdown-section">DATE</a>
                         </button>
-                        <div class="sinopsis-dropdown-menu  dropdown-menu border-radius-0" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="sinopsis-dropdown-menu  dropdown-menu border-radius-0 g-0" aria-labelledby="dropdownMenuButton">
+                          <input class="full-width-datepicker no-outline-datepicker custom-datepicker" type="date" id="datePicker">
                         </div>
                       </div>
                     </div>
+
                     <div class="dropdown col-2 my-1">
                       <div class="dropdown">
-                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-1  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <a class="dropdown-section">AUTOR</a>
                         </button>
                         <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -156,7 +174,7 @@
                     </div>
                     <div class="dropdown col-2 my-1">
                       <div class="dropdown">
-                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-1  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <a class="dropdown-section">SEKCE</a>
                         </button>
                         <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -168,7 +186,7 @@
                     </div>
                     <div class="dropdown col-2 my-1">
                       <div class="dropdown">
-                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-1  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <a class="dropdown-section">TÉMA</a>
                         </button>
                         <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -180,7 +198,7 @@
                     </div>
                     <div class="dropdown col-2 my-1">
                       <div class="dropdown">
-                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-2  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="sinopsis-custome-dropdown-btn btn btn-secondary dropdown-toggle bg-transparent border-1  text-dark rounded-0" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <a class="dropdown-section">ŠTÍTEK</a>
                         </button> 
                         <div class="sinopsis-dropdown-menu  dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -198,6 +216,10 @@
                 <div class="sinopsis-custome-hr container-fluid mt-4 mb-4"></div>
 
               <h3>Události kolem masakru na Tchien-an-men 1989 – Den po dni</h3>
+
+              <p class="italic">六四天安門事件, liou-s' Tchien-an-men š'-ťien <br>
+                Pchin-jin: liu si Tian'anmen shijian</p>
+
 
               <!-- SYMBOLS : TIME/USER/FILE/VIEW -->
               <div class="d-flex flex-wrap justify-content-start mb-4 mt-2 g-0">
@@ -537,13 +559,13 @@
 
     <!-- FOOTER -->
 
-    <div class="footer container-fluid sticky-bottom position-relative overflow-hidden">
+    <div class="footer container-fluid sticky-bottom position-relative overflow-hidden d-sm-flex align-items-sm-center justify-content-sm-center ">
 
       <div class="mx-0 mx-sm-5 sinopsis-custome-footer-inner-class">
       <div class="sinopsis-custome-footer-margin container-fluid d-lg-flex justify-content-evenly d-block g-0">
 
       <div class="container-fluid g-0">
-        <div class="navbar-nav d-flex flex-col flex-lg-row justify-content-between my-md-4 my-lg-2">
+        <div class="navbar-nav d-flex flex-col flex-lg-row justify-content-between column-gap-sm-5 my-md-4 my-lg-2">
           <div class="sinopsis-custome-menu-class my-3">analytické komentáře</div>
           <div class="sinopsis-custome-menu-class my-3">pojmy a termíny </div>
           <div class="sinopsis-custome-menu-class my-3">research and analysis (en)</div>
@@ -580,11 +602,11 @@
     </div>
 
     <!-- SCRIPT -->
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./src/main.js"></script>  
+    <script src="src/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+
+    </script>   
 
   </body>
 

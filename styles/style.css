@@ -24,6 +24,8 @@ html{
     --font-lg:22px;
     --font-xlg:24px;
     --font-H1:24px;
+    --font-H1-logo:38px;
+    
 }
 /* ________________________________________________________________ */
 
@@ -36,8 +38,79 @@ html{
     --clr-dark-mode:#FFEACC;
 }
 
+.mt-5-875rem {
+    margin-top: 8.25rem!important;
+  }
+
+.mw-5-875rem {
+    max-width: 30.5625rem !important;
+}
+
+.mb-5-875rem {
+    margin-bottom: 5.875rem !important;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.nadpis-h3-velikost{
+    font-size: var(--font-sm);
+}
+
 p{
-    color: var(--clr-dark);
+    color: var(--clr-dark);    
+}
+
+.sinopsis-sponsors{
+    filter: grayscale(1);
+    transition: filter 0.3s;
+}
+
+.sinopsis-sponsors:hover{
+    filter: grayscale(0);
+    transition: filter 0.3s;
+}
+
+.text-darkmode{
+    color: var(--clr-dark-mode);
+    text-decoration: none;
+}
+
+.full-width-datepicker{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color:var(--clr-dark);
+    background: transparent;
+}
+
+.custom-datepicker::-webkit-calendar-picker-indicator {
+    filter: invert(22%) sepia(59%) saturate(3073%) hue-rotate(341deg) brightness(93%) contrast(108%);
+  }
+
+.text-logo{
+    font-size:var(--font-xlg)
+}
+
+.white-text{
+     color: #FFEACC;
+}
+
+.dark-text{
+    color: var(--clr-text-dark);
+}
+
+.h1-logo{
+    color: var(--clr-text-white);
+    font-size: var(--font-H1-logo);
+    font-weight: bold;
 }
 
 h1{
@@ -51,8 +124,14 @@ h2{
 }
 
 h3{
+    font-weight: 00;
+    font-size: var(--font-H1);
     color: var(--clr-dark); 
     margin-top: 2rem;
+}
+
+.tex-bold{
+    font-weight:500;
 }
 
 /* CZ/ENG */
@@ -118,13 +197,13 @@ h3{
 .sinopsis-custome-hr{
     background-color: var(--clr-dark);
     border: none;
-    height: 2px;
+    height: 1px;
 }
 
 .sinopsis-custome-hr-red{
     background-color: var(--clr-red);
     border: none;
-    height: 4px;
+    height: 2px;
 }
 
 /* ICONS / SYMBOLS-MEDIA / IMG */
@@ -403,7 +482,7 @@ a.nav-link:focus  {
     color:var(--crl-light);
 }
 .sinopsis-pagination-border{
-    border: solid 2px;
+    border: solid 1px;
     border-color: var(--clr-dark-mode);
     width: 2rem;
     height: 1.8rem;
@@ -427,12 +506,12 @@ a.nav-link:focus  {
 }
 
 .custome-inner-content-padding{
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
 }
 
 @media (min-width: 768px) {
     .custome-inner-content-padding{
-        padding: 4rem 7.25rem;
+        padding: 6rem 4.5rem;
     }
   }
 
@@ -463,8 +542,7 @@ a.nav-link:focus  {
 
 .sinopsis-custome-footer-inner-class{
     position: relative;
-    max-width: 85%;
-    left: 3%;
+    max-width: 100%;
 }
 
 .footer{
@@ -502,3 +580,13 @@ a.nav-link:focus  {
         margin:2rem 0 0 0 ;
     }
   }
+
+  /* @media (max-width: 576px) {
+    .navbar-nav {
+        order: 1;
+       }
+
+    .footer-bottom-row-left {
+    order: 2;
+    }
+  } */
