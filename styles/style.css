@@ -38,15 +38,15 @@ html{
     --clr-dark-mode:#FFEACC;
 }
 
-.mt-5-875rem {
-    margin-top: 8.25rem!important;
+.mt-8 {
+    margin-top: 8.25rem;
   }
 
-.mw-5-875rem {
+.mw-8 {
     max-width: 30.5625rem !important;
 }
 
-.mb-5-875rem {
+.mb-8 {
     margin-bottom: 5.875rem !important;
 }
 
